@@ -1,0 +1,151 @@
+* {
+  padding: 0%;
+  margin: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 100vh;
+}
+.heading {
+  color: blue;
+}
+.img {
+  width: 600px;
+  height: 700px;
+  object-fit: contain;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.onButton {
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+  background-color: green;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.offButton {
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: red;
+  cursor: pointer;
+}
+.flickButton {
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: white;
+  background-color: green;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  animation: flick 7s linear infinite;
+}
+@keyframes flick {
+  0% {
+    background-color: red;
+    filter: brightness(1.5);
+  }
+  15% {
+    background-color: green;
+    filter: brightness(1.5);
+  }
+  25% {
+    background-color: red;
+    filter: brightness(1.5);
+  }
+  35% {
+    background-color: green;
+    filter: brightness(1.5);
+  }
+  45% {
+    background-color: red;
+    filter: brightness(1.5);
+  }
+  55% {
+    background-color: green;
+    filter: brightness(1.5);
+  }
+  65% {
+    background-color: red;
+    filter: brightness(1.5);
+  }
+  75% {
+    background-color: green;
+    filter: brightness(1.5);
+  }
+  90% {
+    background-color: red;
+    filter: brightness(1.5);
+  }
+  100% {
+    background-color: green;
+    filter: brightness(1.5);
+  }
+}
+.bulbOn {
+  width: 600px;
+  height: 700px;
+  object-fit: contain;
+  filter: brightness(1.5);
+}
+.bulbOff {
+  width: 600px;
+  height: 700px;
+  object-fit: contain;
+  filter: brightness(0.1);
+}
+.bulbFlick {
+  width: 600px;
+  height: 700px;
+  object-fit: contain;
+  animation: bulb 4s linear infinite;
+}
+@keyframes bulb {
+  0% {
+    filter: brightness(1.5);
+  }
+  15% {
+    filter: brightness(0.1);
+  }
+  25% {
+    filter: brightness(1.5);
+  }
+  35% {
+    filter: brightness(0.1);
+  }
+  45% {
+    filter: brightness(1.5);
+  }
+  55% {
+    filter: brightness(0.1);
+  }
+  65% {
+    filter: brightness(1.5);
+  }
+  75% {
+    filter: brightness(0.1);
+  }
+  90% {
+    filter: brightness(1.5);
+  }
+  100% {
+    filter: brightness(0.1);
+  }
+}
